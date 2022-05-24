@@ -38,7 +38,6 @@ fun DemoFileCloudTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Com
     MaterialTheme(
         colors = colors,
         typography = Typography,
-        shapes = Shapes,
         content = content
     )
 }

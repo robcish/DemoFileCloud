@@ -5,6 +5,11 @@
 
     <data>
 
+        <import type="com.example.demofilecloud.MainActivity.RxActions" />
+
+        <variable
+            name="clickCV"
+            type="io.reactivex.functions.Action" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,6 +18,20 @@
         tools:context=".MainActivity">
 
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:onClick="@{() -> RxActions.runSafe(clickCV)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_contact_page_24"
+            tools:ignore="contentDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

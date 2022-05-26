@@ -43,7 +43,7 @@ object Skills {
     private fun SingleSkillCard(skill: String) {
         Surface(
             elevation = 6.dp,
-            shape = RoundedCornerShape(15.dp),
+            shape = RoundedCornerShape(50),
             color = Secondary
         ) {
             Row(

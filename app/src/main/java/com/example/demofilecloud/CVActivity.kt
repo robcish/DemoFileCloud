@@ -23,6 +23,7 @@ import com.example.demofilecloud.ui.cv.PersonalInfo
 import com.example.demofilecloud.ui.cv.PersonalInfo.PersonalInfoDivider
 import com.example.demofilecloud.ui.cv.PersonalInfo.PersonalInfoRow
 import com.example.demofilecloud.ui.cv.Skills.Skills
+import com.example.demofilecloud.ui.cv.Slider.Slider
 import com.example.demofilecloud.ui.cv.Texts.Biography
 import com.example.demofilecloud.ui.cv.TopBar.TopBar
 import com.example.demofilecloud.ui.theme.DemoFileCloudTheme
@@ -63,6 +64,8 @@ fun CV_Content() {
             )
 
             Biography(text = stringResource(id = R.string.biography_robert))
+
+            Slider()
         }
     }
 }

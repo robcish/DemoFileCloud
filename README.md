@@ -6,6 +6,7 @@ understanding of the platform and overall attention to details.
 **Language:** Kotlin
 
 **Requirements:**
+
 • Setup a GitHub public repo. All work should be done within that repo using proper Git etiquette.
 
 > Here we are, but I skipped other branches and pull requests :)
@@ -26,3 +27,11 @@ Detail Screen after clicking GIF with some data there.
 • Submit a ready-to-build repo link.
 
 > Here we are.
+
+![screen3](https://user-images.githubusercontent.com/12535448/170501120-a7f534a4-bb97-4cfd-a1a0-94109951e791.png)
+
+![screen1](https://user-images.githubusercontent.com/12535448/170501115-b34ebabc-72ad-42ab-87e1-1364c0b17bad.png) ![screen2](https://user-images.githubusercontent.com/12535448/170501119-31c8aa05-39a0-4dd3-83e4-4e6a698e4b68.png)
+
+
+
+

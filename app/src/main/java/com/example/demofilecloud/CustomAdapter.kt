@@ -24,11 +24,6 @@ class CustomAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         return ItemGifAdapterHolder(binding.root, binding)
     }
 
-    class ItemGifAdapterHolder(
-        view: View,
-        val binding: ItemGifListBinding
-    ) : RecyclerView.ViewHolder(view)
-
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val gifHolder = holder as ItemGifAdapterHolder
         gifHolder.binding.gifView.setMedia(list[position], RenditionType.fixedWidthSmall)
@@ -42,8 +37,6 @@ class CustomAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         }
     }
 
-//    private inline fun <reified T : Activity> Context.createIntent() = Intent(this, T::class.java)
-
     override fun getItemCount(): Int {
         return list.size
     }
@@ -53,14 +46,9 @@ class CustomAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         notifyDataSetChanged()
     }
 
-    object RxActions {
-        @JvmStatic
-        fun runSafe(action: Action?) {
-            try {
-                action?.run()
-            } catch (e: Exception) {
-                Timber.e(e)
-            }
-        }
-    }
+    class ItemGifAdapterHolder(
+        view: View,
+        val binding: ItemGifListBinding
+    ) : RecyclerView.ViewHolder(view)
+
 }
